@@ -1,6 +1,6 @@
 # Community Cuisine
 
-An opportunity to discover new and unique recipes and connect with others a long the way.
+An opportunity to discover new and unique recipes and connect with others a long the way!
 
 ### Dependencies
 
@@ -26,7 +26,6 @@ An opportunity to discover new and unique recipes and connect with others a long
 ## Future Development
 - Users are able to create their own recipe to local API
 - Share Recipes Button
-- 
 
 ## Sources
 
