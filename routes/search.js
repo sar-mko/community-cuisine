@@ -1,16 +1,16 @@
 const express = require('express')
 const router = express.Router()
 const searchController = require('../controllers/search') 
-const { ensureAuth } = require('../middleware/auth')
+const { ensureAuth, ensureAuthCheck } = require('../middleware/auth')
 
 
-router.get('/', searchController.getIndex)
+router.get('/', ensureAuthCheck, searchController.getIndex)
 
-router.get('/getRecipes',searchController.getRecipes)
+router.get('/getRecipes', ensureAuthCheck,searchController.getRecipes)
 
-router.get('/getRecipes/:id', searchController.getInfo)
+router.get('/getRecipes/:id', ensureAuthCheck, searchController.getInfo)
 
-router.post('/addRecipes', ensureAuth, searchController.addRecipes)
+router.post('/addRecipes', ensureAuthCheck, ensureAuth, searchController.addRecipes)
 
 
 
