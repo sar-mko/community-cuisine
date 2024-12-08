@@ -13,30 +13,7 @@
     <title>Results</title>
 </head>
 <body data-theme="cupcake" class="oswald-reg">
-  <nav class="navbar bg-base-100">
-    <div class="flex-1">
-      <a href="/" class="btn btn-ghost text-xl"><img class="rounded-full" src="../images/logo-3.png" width="45px" alt="">Community Cuisine</a>
-      
-    </div>
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1">
-        <li><a href="/search">Search</a></li>
-        <li>
-          <details>
-            <summary>
-              More
-            </summary>
-            <ul class="p-2 bg-base-100 rounded-t-none">
-              <li><a href="/userRecipes">My Recipes</a></li>
-              <li><a href="/login">Login</a></li>
-              <li><a href="/signup">Sign up</a></li>
-              <li><a href="/logout">Logout</a></li>
-            </ul>
-          </details>
-        </li>
-      </ul>
-    </div>
-</nav> 
+  <%- include("partials/nav.ejs") %> 
      <main data-theme="cupcake">
       <div class="container mx-auto px-8	">
         <h1>Results for "<%= category %>"</h1>
