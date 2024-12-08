@@ -17,11 +17,11 @@
      <main class="hero min-h-screen bg-yellow-600">
         <div class="hero-content flex-col lg:flex-row">
           <img src="../images/baking.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
+          <div class="text-center">
             <h1 class="text-5xl font-bold">Find your next favorite recipe</h1>
             <p class="py-6">Please input a category (e.g. seafood, vegan,etc.).</p>
-            <form action="/search/getRecipes" class="input input-bordered flex items-center gap-2">
-                <input list="recipes" name="recipe" type="text" id="recipeInput" class="grow border-0 input input-accent input-bordered" placeholder="Search">
+            <form action="/search/getRecipes" class="input input-bordered input-accent text-center flex items-center gap-2">
+                <input list="recipes" name="recipe" type="text" id="recipeInput" class="grow border-0" placeholder="Search">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
 
                 <datalist class="" id="recipes">
@@ -33,7 +33,7 @@
                 </datalist> 
 
                 
-                <input type="submit" value="Go" class=" btn btn-accent ">
+                <input type="submit" value="Go" class=" btn btn-accent btn-sm" >
               </form>
               <% if (typeof message !== 'undefined' && message.length > 0) { %>
                 <span class="alert-danger hide alert-msg"><%= message %></span>
