@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme=""ang="en">
+<html data-theme="retro"ang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Your Recipes</title>
 </head>
-<body>
+<body data-theme="retro">
   <%- include("partials/nav.ejs") %>
 
 <div class="bg-gray-100">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-base-200">
       <div class="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32 ">
         <h2 class= " text-2xl font-bold text-gray-900 <%= recipes.length ? 'text-center' : 'font-bold' %>  " > <%= recipes.length ? "Your Saved Recipes" : "Add Recipes!" %></h2>
   

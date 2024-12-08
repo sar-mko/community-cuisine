@@ -51,7 +51,6 @@ module.exports = {
     const user = req.user._id 
     try{
         const recipeCheck = await Recipe.find({userId:req.user._id , recipeId:req.body.recipeId}).lean()
-        console.log(recipeCheck , 'recipecheck', recipeCheck.length)
         if(!recipeCheck.length) {
           
             await Recipe.create({recipeId: id, userId: user, recipeName: req.body.recipeName , recipeImg: req.body.recipeImg , recipeType: req.body.recipeType})
